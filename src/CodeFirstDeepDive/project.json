@@ -1,0 +1,40 @@
+﻿{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Microsoft.Extensions.DependencyInjection": "1.1.1",
+    "Microsoft.Extensions.Logging": "1.1.2",
+    "Microsoft.Extensions.Logging.Console": "1.1.2",
+    "Microsoft.Extensions.Logging.Debug": "1.1.2",
+    "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
+    "Microsoft.Extensions.Configuration": "1.1.2",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.1.2",
+    "Microsoft.Extensions.Configuration.Json": "1.1.2",
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.2",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.1.1"
+    },
+    "Microsoft.EntityFrameworkCore.Design": {
+      "type": "build",
+      "version": "1.1.0"
+    },
+    "Microsoft.EntityFrameworkCore.Tools": {
+      "type": "build",
+      "version": "1.1.0-preview4-final"
+    }
+  },
+  "tools": {
+    "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.0-preview4-final"
+  },
+  "frameworks": {
+    "netcoreapp1.1": {
+      "imports": 
+        "dnxcore50"
+      
+    }
+  }
+}

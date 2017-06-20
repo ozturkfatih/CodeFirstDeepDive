@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{03B1B385-DD05-45D8-9CC5-1E0115F47969}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3556FE04-B22A-4116-BCF2-FD581B0BE1F5}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CodeFirstDeepDive", "src\CodeFirstDeepDive\CodeFirstDeepDive.xproj", "{B93E86D2-251F-4905-AA3C-F8E434156D59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B93E86D2-251F-4905-AA3C-F8E434156D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93E86D2-251F-4905-AA3C-F8E434156D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93E86D2-251F-4905-AA3C-F8E434156D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93E86D2-251F-4905-AA3C-F8E434156D59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B93E86D2-251F-4905-AA3C-F8E434156D59} = {03B1B385-DD05-45D8-9CC5-1E0115F47969}
+	EndGlobalSection
+EndGlobal
