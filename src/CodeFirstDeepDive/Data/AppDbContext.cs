@@ -15,6 +15,7 @@ namespace CodeFirstDeepDive.Data
         public DbSet<Book> Books { get; set; }
         public DbSet<BookFile> BookFiles { get; set; }
         public DbSet<BookTag> BookTags { get; set; }
+        public DbSet<BookWord> BookWords { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<File> Files { get; set; }
         public DbSet<Tag> Tags { get; set; }
@@ -27,6 +28,7 @@ namespace CodeFirstDeepDive.Data
                 .RegisterEntityMapping<Book, BookMapping>()
                 .RegisterEntityMapping<BookFile, BookFileMapping>()
                 .RegisterEntityMapping<BookTag, BookTagMapping>()
+                .RegisterEntityMapping<BookWord,BookWordMapping>()
                 .RegisterEntityMapping<Category, CategoryMapping>()
                 .RegisterEntityMapping<File, FileMapping>()
                 .RegisterEntityMapping<Tag, TagMapping>();

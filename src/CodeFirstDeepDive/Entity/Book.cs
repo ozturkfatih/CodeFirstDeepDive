@@ -15,9 +15,10 @@ namespace CodeFirstDeepDive.Entity
         public DateTime PublishDate { get; set; }
         public int AuthorId { get; set; }
         public int CategoryId { get; set; }
-        public Author Author { get; set; }
-        public Category Category { get; set; }
-        public ICollection<BookTag> BookTags { get; set; }
-        public ICollection<BookFile> BookFiles { get; set; }
+        public virtual Author Author { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual BookWord BookWord { get; set; }
+        public virtual ICollection<BookTag> BookTags { get; set; }
+        public virtual ICollection<BookFile> BookFiles { get; set; }
     }
 }
