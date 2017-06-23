@@ -11,7 +11,19 @@ namespace CodeFirstDeepDive.Mapping
         public void Map(EntityTypeBuilder<Book> builder)
         {
             builder.ToTable("Book");
-
+            builder
+                .Property(p => p.Title)
+                .IsRequired()
+                .HasMaxLength(255);
+            builder
+                .Property(p => p.Description)
+                .IsRequired()
+                .HasMaxLength(2000);
+            builder
+                .Property(p => p.Price)
+                .IsRequired()
+                .ForSqlServerHasColumnType("decimal(18,2)")
+                .ForSqlServerHasDefaultValue(0);
             /**
              * Relationships
              */
