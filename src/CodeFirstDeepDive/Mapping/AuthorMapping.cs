@@ -11,14 +11,7 @@ namespace CodeFirstDeepDive.Mapping
         {
             builder
                 .ToTable("Author");
-            /**
-             * Relationships
-             */
-            builder
-                .HasMany(p => p.Books)
-                .WithOne(p => p.Author)
-                .HasForeignKey(c => c.AuthorId)
-                .ForSqlServerHasConstraintName("ForeignKey_Book_Author_AuthorId");
+            
         }
     }
 }

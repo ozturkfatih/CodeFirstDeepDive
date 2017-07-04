@@ -12,11 +12,9 @@ namespace CodeFirstDeepDive.Entity
         public string Version { get; set; }
         public string Number { get; set; }
         public DateTime PublishDate { get; set; }
-        public int AuthorId { get; set; }
-        public int CategoryId { get; set; }
-        public virtual Author Author { get; set; }
-        public virtual Category Category { get; set; }
         public virtual BookWord BookWord { get; set; }
+        public virtual ICollection<BookAuthor> BookAuthors { get; set; }
+        public virtual ICollection<BookCategory> BookCategories { get; set; }
         public virtual ICollection<BookTag> BookTags { get; set; }
         public virtual ICollection<BookFile> BookFiles { get; set; }
     }

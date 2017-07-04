@@ -10,6 +10,6 @@ namespace CodeFirstDeepDive.Entity
         public virtual string FullName => $"{FirstName} {LastName}";
 
         //Relations
-        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<BookAuthor> BookAuthors { get; set; }
     }
 }
