@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using CodeFirstDeepDive.Data;
 using CodeFirstDeepDive.Service;
 using Microsoft.EntityFrameworkCore;
@@ -37,6 +38,8 @@ namespace CodeFirstDeepDive
             );
             // add services
             services.AddTransient<ILogService, LogService>();
+            services.AddTransient<ITagService,TagService>();
+            services.AddTransient<ICategoryService,CategoryService>();
             // add app
             services.AddTransient<AppRun>();
         }

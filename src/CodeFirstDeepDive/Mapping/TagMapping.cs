@@ -9,7 +9,12 @@ namespace CodeFirstDeepDive.Mapping
     {
         public void Map(EntityTypeBuilder<Tag> builder)
         {
-            builder.ToTable("Tag");
+            builder
+                .ToTable("Tag");
+            builder
+                .Property(p => p.Name)
+                .IsRequired()
+                .HasMaxLength(255);
         }
     }
 }

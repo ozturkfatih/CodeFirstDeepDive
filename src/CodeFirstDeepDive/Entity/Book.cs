@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using CodeFirstDeepDive.Enums;
 
 namespace CodeFirstDeepDive.Entity
 {
@@ -12,7 +13,9 @@ namespace CodeFirstDeepDive.Entity
         public string Version { get; set; }
         public string Number { get; set; }
         public DateTime PublishDate { get; set; }
-        public virtual BookWord BookWord { get; set; }
+        public BookLength BookLength { get; set; }
+        public BookLevel BookLevel { get; set; }
+        public BookWord BookWord { get; set; }
         public virtual ICollection<BookAuthor> BookAuthors { get; set; }
         public virtual ICollection<BookCategory> BookCategories { get; set; }
         public virtual ICollection<BookTag> BookTags { get; set; }

@@ -7,6 +7,6 @@
         public int UniqueWord { get; set; }
         public string Words { get; set; }
         public int IdRef { get; set; }
-        public virtual Book Book { get; set; }
+        public Book Book { get; set; }
     }
 }

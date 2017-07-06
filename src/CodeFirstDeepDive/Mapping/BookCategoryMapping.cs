@@ -15,13 +15,11 @@ namespace CodeFirstDeepDive.Mapping
             builder
                 .HasOne(ba => ba.Book)
                 .WithMany(b => b.BookCategories)
-                .HasForeignKey(ba => ba.BookId)
-                .OnDelete(deleteBehavior: DeleteBehavior.SetNull);
+                .HasForeignKey(ba => ba.BookId);
             builder
                 .HasOne(ba => ba.Category)
                 .WithMany(b => b.BookCategories)
-                .HasForeignKey(ba => ba.CategoryId)
-                .OnDelete(deleteBehavior: DeleteBehavior.SetNull);
+                .HasForeignKey(ba => ba.CategoryId);
         }
     }
 }

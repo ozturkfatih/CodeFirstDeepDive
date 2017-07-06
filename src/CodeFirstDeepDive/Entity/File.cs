@@ -1,4 +1,5 @@
-﻿using CodeFirstDeepDive.Enums;
+﻿using System.Collections.Generic;
+using CodeFirstDeepDive.Enums;
 
 namespace CodeFirstDeepDive.Entity
 {
@@ -13,5 +14,6 @@ namespace CodeFirstDeepDive.Entity
         public string MimeType { get; set; }
         public long Size { get; set; }
         public string Guid { get; set; }
+        public virtual ICollection<BookFile> BookFiles { get; set; }
     }
 }

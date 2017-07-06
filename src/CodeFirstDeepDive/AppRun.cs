@@ -7,17 +7,26 @@ namespace CodeFirstDeepDive
     public class AppRun
     {
         private readonly ILogService _logService;
-
-        public AppRun(ILogService logService)
+        private readonly ITagService _tagService;
+        private readonly ICategoryService _categoryService;
+        public AppRun(ILogService logService, ITagService tagService, ICategoryService categoryService)
         {
             _logService = logService;
+            _tagService = tagService;
+            _categoryService = categoryService;
         }
 
         public void Run()
         {
-            var watch = Stopwatch.StartNew();
-            _logService.LogInfoMessages("Log service is running.");
-            watch.Stop();
+            foreach (var category in _categoryService.GetList())
+            {
+                Console.Write($"\tId:{category.Id}\tCategory:{category.Name}\n");
+            }
+            foreach (var category in _categoryService.GetListLinq())
+            {
+                Console.Write($"\tId:{category.Id}\tCategory:{category.Name}\n");
+            }
+
             Console.ReadKey();
         }
     }

@@ -11,7 +11,12 @@ namespace CodeFirstDeepDive.Mapping
         {
             builder
                 .ToTable("Author");
-            
+            builder.Property(p => p.FirstName)
+                .IsRequired()
+                .HasMaxLength(255);
+            builder.Property(p => p.LastName)
+                .IsRequired()
+                .HasMaxLength(255);
         }
     }
 }
